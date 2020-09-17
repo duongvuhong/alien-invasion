@@ -6,7 +6,7 @@ class Bullet(Sprite):
 
     def __init__(self, ai_settings, screen, ship):
         """Create a bullet object, at the ship's current position."""
-        super(Bullet, self).__init__()
+        super().__init__()
         self.screen = screen
 
         # Create bullet rect at (0, 0), then set correct position.
@@ -14,7 +14,7 @@ class Bullet(Sprite):
             ai_settings.bullet_height)
         self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
-        
+
         # Store a decimal value for the bullet's position.
         self.y = float(self.rect.y)
 

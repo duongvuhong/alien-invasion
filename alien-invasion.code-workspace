@@ -6,8 +6,7 @@
 	],
 	"settings": {
 		"python.linting.pylintArgs": [
-			"--extension-pkg-whitelist=pygame",
-			"--errors-only"
+			"--extension-pkg-whitelist=pygame"
 		]
 	}
 }
